@@ -2,7 +2,8 @@ module "ec2" {
   source = "./modules/ec2"
   ami = var.ami
   instance_type = var.instance_type
-
+  public_subnet = var.public_subnet
+  
 }
 module "S3_bucket" {
   source = "./modules/S3_bucket"
@@ -12,6 +13,7 @@ module "security_group" {
   source = "./modules/security_group"
   inbound_rules = var.inbound_rules
   outbound_rules = var.outbound_rules
+  vpc_varaiable = var.vpc_varaiable
 }
 
 # First import network module , to create our vpc and subnets  

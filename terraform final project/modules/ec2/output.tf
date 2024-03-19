@@ -4,3 +4,8 @@ output "aws_instance" {
 output "ami" {
   value=var.ami.id
 }
+
+output "public_subnet" {
+  value=var.public_subnet.id
+  
+}

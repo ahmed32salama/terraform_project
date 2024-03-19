@@ -14,8 +14,8 @@ in_from_port = 0
 in_action = "allow"
 in_cidr = "0.0.0.0/0"
 
-ami = "Your Value"
-instance_type = "Your Value"
-bucket_name = "Your Value"
-outbound_rules = "Your Value"
-inbound_rules = "Your Value"
+ami = "ami-0c55b159cbfafe1f0"
+instance_type = "t2.micro"
+bucket_name = "salama_bucket"
+outbound_rules = "Allow all outbound traffic"
+inbound_rules = "Allow SSH (port 22) from 0.0.0.0/0"
